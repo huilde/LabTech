@@ -239,6 +239,11 @@
   margin-bottom: 8px;
 }
 
+.custom-syntax-highlighter {
+  white-space: pre-wrap !important;
+  overflow-x: auto !important;
+  max-width: 100% !important;
+}
 .trilhaContent {
   text-align: left;
   max-width: 247px;
@@ -256,7 +261,7 @@
 }
 
 .trilha {
-  padding: 0 24px;
+  padding: 0 24px 80px 24px;
 }
 
 .divTrilha {
@@ -276,4 +281,77 @@
 
 .card * {
   cursor: pointer;
+}
+.atividades {
+  padding-bottom: 80px;
+}
+.atividadeText {
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  margin-bottom: 27px;
+
+  color: #ffffff;
+}
+
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 90vw;
+  z-index: 2;
+}
+
+.codeText {
+  background: #110d24;
+
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  /* or 17px */
+  padding: 16px;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  text-align: left;
+  margin-top: 32px;
+
+  color: #ffffff;
+}
+
+.colored {
+  color: #ff3e95;
+}
+
+.quizz {
+  background: #172e66 !important;
+  color: #00a3ff !important;
+  border: none !important;
+}
+
+.success {
+  background-color: #27c36f !important;
+  color: #ffffff !important;
+}
+
+.error {
+  background-color: #e07900 !important;
+}
+.ant-radio-button-wrapper .css-dev-only-do-not-override-w8mnev::before {
+  display: none !important;
 }

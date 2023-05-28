@@ -6,6 +6,8 @@ import { Navigate } from "react-router-dom";
 const Trilha = () => {
   const [goToInicio, setGoToInicio] = useState(false);
   const [goToAtividade, setGoToAtividade] = useState(false);
+  const [goToPerguntas, setGoToPerguntas] = useState(false);
+  const [goToProjeto, setGoToProjeto] = useState(false);
 
   return (
     <Col align="top" justify="top" className="tela">
@@ -70,211 +72,224 @@ const Trilha = () => {
               content="Conceitos básicos de algoritmos"
             ></CardTrilha>
           </div>
-          <CardTrilha
-            svg={
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  fill="#172E66"
-                />
-                <path
-                  d="M8.5 16L13.5 21L23.5 11"
-                  stroke="#367CFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  stroke="#367CFF"
-                  strokeWidth="2"
-                />
-              </svg>
-            }
-            content="Atividades - Parte 1"
-          ></CardTrilha>
-          <CardTrilha
-            svg={
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  fill="#172E66"
-                />
-                <path
-                  d="M8.5 16L13.5 21L23.5 11"
-                  stroke="#367CFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  stroke="#367CFF"
-                  strokeWidth="2"
-                />
-              </svg>
-            }
-            content="Atividades - Parte 2"
-          ></CardTrilha>
-          <CardTrilha
-            svg={
-              <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="56" height="56" rx="28" fill="#383353" />
-                <path
-                  d="M22.012 34H37V20C37 19.4696 36.7893 18.9609 36.4142 18.5858C36.0391 18.2107 35.5304 18 35 18H22C20.794 18 19 18.799 19 21V35C19 37.201 20.794 38 22 38H37V36H22.012C21.55 35.988 21 35.805 21 35C21 34.195 21.55 34.012 22.012 34ZM24 22H33V24H24V22Z"
-                  fill="#908F96"
-                />
-              </svg>
-            }
-            type="conteúdo"
-            content="Dados, variáveis e constantes"
-          ></CardTrilha>
-
-          <CardTrilha
-            svg={
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  fill="#221C3E"
-                />
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  stroke="#383353"
-                  strokeWidth="2"
-                />
-              </svg>
-            }
-            content="Atividades"
-          ></CardTrilha>
-          <CardTrilha
-            svg={
-              <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="56" height="56" rx="28" fill="#383353" />
-                <path
-                  d="M22.012 34H37V20C37 19.4696 36.7893 18.9609 36.4142 18.5858C36.0391 18.2107 35.5304 18 35 18H22C20.794 18 19 18.799 19 21V35C19 37.201 20.794 38 22 38H37V36H22.012C21.55 35.988 21 35.805 21 35C21 34.195 21.55 34.012 22.012 34ZM24 22H33V24H24V22Z"
-                  fill="#908F96"
-                />
-              </svg>
-            }
-            type="conteúdo"
-            content="Dados, variáveis e constantes"
-          ></CardTrilha>
-          <CardTrilha
-            svg={
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  fill="#221C3E"
-                />
-                <rect
-                  x="1"
-                  y="1"
-                  width="30"
-                  height="30"
-                  rx="15"
-                  stroke="#383353"
-                  strokeWidth="2"
-                />
-              </svg>
-            }
-            type="Atividades básicas"
-            content="Estruturas de controle: condicionais e loops"
-          ></CardTrilha>
-          <CardTrilha
-            svg={
-              <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="56" height="56" rx="28" fill="#383353" />
-                <g clipPath="url(#clip0_86_5351)">
+          <div onClick={() => setGoToPerguntas(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    fill="#172E66"
+                  />
                   <path
-                    d="M37.75 22V20.5C37.75 20.1022 37.592 19.7206 37.3107 19.4393C37.0294 19.158 36.6478 19 36.25 19H19.75C19.3522 19 18.9706 19.158 18.6893 19.4393C18.408 19.7206 18.25 20.1022 18.25 20.5V22C18.25 22.3978 18.408 22.7794 18.6893 23.0607C18.9706 23.342 19.3522 23.5 19.75 23.5V32.5H19C18.8011 32.5 18.6103 32.579 18.4697 32.7197C18.329 32.8603 18.25 33.0511 18.25 33.25C18.25 33.4489 18.329 33.6397 18.4697 33.7803C18.6103 33.921 18.8011 34 19 34H27.25V35.6294C26.7496 35.8063 26.3278 36.1544 26.0593 36.6122C25.7907 37.07 25.6926 37.6081 25.7824 38.1312C25.8722 38.6543 26.144 39.1288 26.5498 39.471C26.9556 39.8131 27.4692 40.0007 28 40.0007C28.5308 40.0007 29.0444 39.8131 29.4502 39.471C29.856 39.1288 30.1278 38.6543 30.2176 38.1312C30.3073 37.6081 30.2093 37.07 29.9407 36.6122C29.6722 36.1544 29.2504 35.8063 28.75 35.6294V34H37C37.1989 34 37.3897 33.921 37.5303 33.7803C37.671 33.6397 37.75 33.4489 37.75 33.25C37.75 33.0511 37.671 32.8603 37.5303 32.7197C37.3897 32.579 37.1989 32.5 37 32.5H36.25V23.5C36.6478 23.5 37.0294 23.342 37.3107 23.0607C37.592 22.7794 37.75 22.3978 37.75 22ZM28 38.5C27.8517 38.5 27.7067 38.456 27.5833 38.3736C27.46 38.2912 27.3639 38.1741 27.3071 38.037C27.2503 37.9 27.2355 37.7492 27.2644 37.6037C27.2934 37.4582 27.3648 37.3246 27.4697 37.2197C27.5746 37.1148 27.7082 37.0433 27.8537 37.0144C27.9992 36.9855 28.15 37.0003 28.287 37.0571C28.4241 37.1139 28.5412 37.21 28.6236 37.3333C28.706 37.4567 28.75 37.6017 28.75 37.75C28.75 37.9489 28.671 38.1397 28.5303 38.2803C28.3897 38.421 28.1989 38.5 28 38.5ZM19.75 20.5H36.25V22H19.75V20.5Z"
+                    d="M8.5 16L13.5 21L23.5 11"
+                    stroke="#367CFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    stroke="#367CFF"
+                    strokeWidth="2"
+                  />
+                </svg>
+              }
+              content="Atividades - Parte 1"
+            ></CardTrilha>
+          </div>
+          <div onClick={() => setGoToPerguntas(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    fill="#172E66"
+                  />
+                  <path
+                    d="M8.5 16L13.5 21L23.5 11"
+                    stroke="#367CFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    stroke="#367CFF"
+                    strokeWidth="2"
+                  />
+                </svg>
+              }
+              content="Atividades - Parte 2"
+            ></CardTrilha>
+          </div>
+          <div onClick={() => setGoToAtividade(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="56" height="56" rx="28" fill="#383353" />
+                  <path
+                    d="M22.012 34H37V20C37 19.4696 36.7893 18.9609 36.4142 18.5858C36.0391 18.2107 35.5304 18 35 18H22C20.794 18 19 18.799 19 21V35C19 37.201 20.794 38 22 38H37V36H22.012C21.55 35.988 21 35.805 21 35C21 34.195 21.55 34.012 22.012 34ZM24 22H33V24H24V22Z"
                     fill="#908F96"
                   />
-                </g>
-                <defs>
-                  <clipPath id="clip0_86_5351">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(16 16)"
+                </svg>
+              }
+              type="conteúdo"
+              content="Dados, variáveis e constantes"
+            ></CardTrilha>
+          </div>
+          <div onClick={() => setGoToPerguntas(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    fill="#221C3E"
+                  />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    stroke="#383353"
+                    strokeWidth="2"
+                  />
+                </svg>
+              }
+              content="Atividades"
+            ></CardTrilha>
+          </div>
+          <div onClick={() => setGoToAtividade(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="56" height="56" rx="28" fill="#383353" />
+                  <path
+                    d="M22.012 34H37V20C37 19.4696 36.7893 18.9609 36.4142 18.5858C36.0391 18.2107 35.5304 18 35 18H22C20.794 18 19 18.799 19 21V35C19 37.201 20.794 38 22 38H37V36H22.012C21.55 35.988 21 35.805 21 35C21 34.195 21.55 34.012 22.012 34ZM24 22H33V24H24V22Z"
+                    fill="#908F96"
+                  />
+                </svg>
+              }
+              type="conteúdo"
+              content="Dados, variáveis e constantes"
+            ></CardTrilha>
+          </div>
+          <div onClick={() => setGoToPerguntas(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    fill="#221C3E"
+                  />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="30"
+                    height="30"
+                    rx="15"
+                    stroke="#383353"
+                    strokeWidth="2"
+                  />
+                </svg>
+              }
+              type="Atividades básicas"
+              content="Estruturas de controle: condicionais e loops"
+            ></CardTrilha>
+          </div>
+          <div onClick={() => setGoToProjeto(true)}>
+            <CardTrilha
+              svg={
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="56" height="56" rx="28" fill="#383353" />
+                  <g clipPath="url(#clip0_86_5351)">
+                    <path
+                      d="M37.75 22V20.5C37.75 20.1022 37.592 19.7206 37.3107 19.4393C37.0294 19.158 36.6478 19 36.25 19H19.75C19.3522 19 18.9706 19.158 18.6893 19.4393C18.408 19.7206 18.25 20.1022 18.25 20.5V22C18.25 22.3978 18.408 22.7794 18.6893 23.0607C18.9706 23.342 19.3522 23.5 19.75 23.5V32.5H19C18.8011 32.5 18.6103 32.579 18.4697 32.7197C18.329 32.8603 18.25 33.0511 18.25 33.25C18.25 33.4489 18.329 33.6397 18.4697 33.7803C18.6103 33.921 18.8011 34 19 34H27.25V35.6294C26.7496 35.8063 26.3278 36.1544 26.0593 36.6122C25.7907 37.07 25.6926 37.6081 25.7824 38.1312C25.8722 38.6543 26.144 39.1288 26.5498 39.471C26.9556 39.8131 27.4692 40.0007 28 40.0007C28.5308 40.0007 29.0444 39.8131 29.4502 39.471C29.856 39.1288 30.1278 38.6543 30.2176 38.1312C30.3073 37.6081 30.2093 37.07 29.9407 36.6122C29.6722 36.1544 29.2504 35.8063 28.75 35.6294V34H37C37.1989 34 37.3897 33.921 37.5303 33.7803C37.671 33.6397 37.75 33.4489 37.75 33.25C37.75 33.0511 37.671 32.8603 37.5303 32.7197C37.3897 32.579 37.1989 32.5 37 32.5H36.25V23.5C36.6478 23.5 37.0294 23.342 37.3107 23.0607C37.592 22.7794 37.75 22.3978 37.75 22ZM28 38.5C27.8517 38.5 27.7067 38.456 27.5833 38.3736C27.46 38.2912 27.3639 38.1741 27.3071 38.037C27.2503 37.9 27.2355 37.7492 27.2644 37.6037C27.2934 37.4582 27.3648 37.3246 27.4697 37.2197C27.5746 37.1148 27.7082 37.0433 27.8537 37.0144C27.9992 36.9855 28.15 37.0003 28.287 37.0571C28.4241 37.1139 28.5412 37.21 28.6236 37.3333C28.706 37.4567 28.75 37.6017 28.75 37.75C28.75 37.9489 28.671 38.1397 28.5303 38.2803C28.3897 38.421 28.1989 38.5 28 38.5ZM19.75 20.5H36.25V22H19.75V20.5Z"
+                      fill="#908F96"
                     />
-                  </clipPath>
-                </defs>
-              </svg>
-            }
-            type="portfólio"
-            content="Aplicação de lógica de programação para portfólio"
-          ></CardTrilha>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_86_5351">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(16 16)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              }
+              type="portfólio"
+              content="Aplicação de lógica de programação para portfólio"
+            ></CardTrilha>
+          </div>
         </Col>
         <Lock text="Parte 2:  Estruturas de dados"></Lock>
         <Lock text="Parte 3: Modularização e funções"></Lock>
@@ -314,8 +329,10 @@ const Trilha = () => {
           ></CardTrilha>
         </Col>
       </Row>
-      {goToAtividade && <Navigate to="/atividade"></Navigate>}
+      {goToAtividade && <Navigate to="/atividades"></Navigate>}
       {goToInicio && <Navigate to="/inicio"></Navigate>}
+      {goToPerguntas && <Navigate to="/perguntas"></Navigate>}
+      {goToProjeto && <Navigate to="/projeto"></Navigate>}
     </Col>
   );
 };

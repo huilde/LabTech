@@ -6,6 +6,8 @@ import Trilha from "./pages/Trilha";
 import Atividades from "./pages/Atividades";
 import Perfil from "./pages/Perfil";
 import Login from "./pages/Login";
+import Perguntas from "./pages/Perguntas";
+import { Projeto } from "./pages/Projeto";
 import "./index.css";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
+  },
+  {
+    path: "/projeto",
+    element: <Projeto />,
+  },
+  {
+    path: "/perguntas",
+    element: <Perguntas />,
   },
 ]);
 
