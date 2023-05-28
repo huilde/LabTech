@@ -1,27 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Avatar, Tag } from "antd";
 import { Content } from "../Content";
+import { Navigate } from "react-router-dom";
 const Perfil = () => {
+  const [goToInicio, setGoToInicio] = useState(false);
   return (
     <>
       <Row className="header">
-        <a href="/inicio">
-          <svg
-            width="8"
-            height="15"
-            viewBox="0 0 8 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7 13.5L1 7.5L7 1.5"
-              stroke="white"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
+        <svg
+          onClick={() => setGoToInicio(true)}
+          width="8"
+          height="15"
+          viewBox="0 0 8 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 13.5L1 7.5L7 1.5"
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
         <p> Meu perfil</p>
       </Row>
       <div className="profilePic"></div>
@@ -249,6 +250,7 @@ const Perfil = () => {
           }
         ></Content>
       </div>
+      {goToInicio && <Navigate to="/inicio"></Navigate>}
     </>
   );
 };
