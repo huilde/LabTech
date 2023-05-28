@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Progress } from "antd";
 import { CardTrilha } from "../CardTrilha";
 import { Lock } from "../Lock";
 import { Navigate } from "react-router-dom";
 const Trilha = () => {
-  const handleClick = () => {
-    return <Navigate to="/atividades"></Navigate>;
-  };
+  const [goToInicio, setGoToInicio] = useState(false);
+  const [goToAtividade, setGoToAtividade] = useState(false);
 
   return (
     <Col align="top" justify="top" className="tela">
@@ -316,6 +315,8 @@ const Trilha = () => {
           ></CardTrilha>
         </Col>
       </Row>
+      {goToAtividade && <Navigate to="/atividade"></Navigate>}
+      {goToInicio && <Navigate to="/inicio"></Navigate>}
     </Col>
   );
 };

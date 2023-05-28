@@ -76,6 +76,7 @@
   color: #f2f0ff;
 }
 .card {
+  cursor: pointer;
   border-radius: 16px;
   padding: 16px;
   max-width: 500px;
@@ -271,4 +272,8 @@
 
 .cardTrilha .ant-row {
   align-items: center;
+}
+
+.card * {
+  cursor: pointer;
 }

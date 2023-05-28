@@ -33,7 +33,6 @@ const Inicio = () => {
           </Col>
           <Card />
           {goToPerfil && <Navigate to="/perfil"></Navigate>}
-          {goToTrilha && <Navigate to="/trilha"></Navigate>}
         </Col>
       </Col>
     </Row>
