@@ -36,9 +36,6 @@ const Login = () => {
     console.log("failed", err);
   };
 
-  const logOut = () => {
-    setProfile(null);
-  };
   return (
     <>
       {isLogged ? (
@@ -46,13 +43,17 @@ const Login = () => {
           <Person />
           <Row justify="middle" align="middle">
             <Col justify="center" align="middle">
-              <h1 className="base-font">Aprenda praticando</h1>
+              <h1 className="base-font">
+                Aprenda praticando
+                <span style={{ color: "#27C36F", margin: 0 }}>|</span>
+              </h1>
               <p className="base-font">
                 Preencha os dados abaixo para continuar.
               </p>
 
               <div>
                 <Form
+                  onFinish={() => setIsLogged(false)}
                   hideRequiredMark
                   form={form}
                   name="validateOnly"
@@ -84,11 +85,11 @@ const Login = () => {
                   <Form.Item>
                     <Space>
                       <Button
+                        htmlType="submit"
                         className="button"
                         type="primary"
                         shape="round"
                         size="large"
-                        onClick={() => setIsLogged(false)}
                       >
                         Entrar
                       </Button>

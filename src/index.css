@@ -85,7 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
 }

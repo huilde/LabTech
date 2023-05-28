@@ -150,3 +150,125 @@
 
   color: #aca6cf;
 }
+.tela {
+  height: 100vh;
+  width: 100vw;
+}
+.tela .ant-col {
+  width: 100vw;
+}
+.trilhaHeader {
+  padding: 16px 24px;
+  min-width: 272px;
+  background-color: #3083ff;
+  font-family: "Consolas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  /* or 24px */
+  height: 61px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+}
+.trilhaHeader span {
+  margin: 16px 0 16px 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.subHeader {
+  padding: 16px 24px;
+  width: 272px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+  text-align: left;
+  color: #ffffff;
+  background: #352e56;
+  margin-bottom: 8px;
+}
+
+.ant-progress-inner {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.cardTrilha {
+  cursor: pointer;
+  padding: 16px;
+  background: #221c3e;
+  border: 2px solid #383353;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  /* gap: 16px; */
+}
+
+.type {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+  /* identical to box height, or 12px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #aaaaaa;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 8px;
+}
+
+.trilhaContent {
+  text-align: left;
+  max-width: 247px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  /* or 19px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.trilha {
+  padding: 0 24px;
+}
+
+.divTrilha {
+  margin-left: 16px;
+}
+
+.vertical {
+  border-left: 2px solid #383353;
+  height: 775px;
+  position: absolute;
+  left: 50%;
+}
+
+.cardTrilha .ant-row {
+  align-items: center;
+}
