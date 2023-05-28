@@ -11,23 +11,22 @@ const Trilha = () => {
     <Col align="top" justify="top" className="tela">
       <Row>
         <Col className="trilhaHeader">
-          <a href="/inicio">
-            <svg
-              width="8"
-              height="15"
-              viewBox="0 0 8 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 13.5L1 7.5L7 1.5"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+          <svg
+            onClick={() => setGoToInicio(true)}
+            width="8"
+            height="15"
+            viewBox="0 0 8 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 13.5L1 7.5L7 1.5"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           <span className="principalContent">
             Trilha 1: Lógica de programação básica
           </span>
@@ -44,7 +43,7 @@ const Trilha = () => {
       <Row>
         <div className="vertical"></div>
         <Col align="center" className="trilha">
-          <a href="/atividades">
+          <div onClick={() => setGoToAtividade(true)}>
             <CardTrilha
               svg={
                 <svg
@@ -70,7 +69,7 @@ const Trilha = () => {
               type="conteúdo"
               content="Conceitos básicos de algoritmos"
             ></CardTrilha>
-          </a>
+          </div>
           <CardTrilha
             svg={
               <svg
