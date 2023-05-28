@@ -16,6 +16,7 @@ const Inicio = () => {
           <Col className="sub">
             <Avatar
               onClick={() => setGoToPerfil(true)}
+              src={profile.imageUrl}
               style={{
                 verticalAlign: "middle",
                 marginRight: "10px",
@@ -24,7 +25,7 @@ const Inicio = () => {
               size="large"
               gap={4}
             >
-              {"Lucy"}
+              {profile.name}
             </Avatar>
             <span onClick={() => setGoToPerfil(true)} className="blue">
               Ver perfil

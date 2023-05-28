@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Row, Col, Avatar, Tag } from "antd";
 import { Content } from "../Content";
 import { Navigate } from "react-router-dom";
+import { Context } from "../Context";
 const Perfil = () => {
+  const [profile] = useContext(Context);
   const [goToInicio, setGoToInicio] = useState(false);
   return (
     <>
@@ -129,6 +131,7 @@ const Perfil = () => {
       </Row>
       <div className="conteudo">
         <Avatar
+          src={profile.imageUrl}
           style={{
             verticalAlign: "middle",
             marginRight: "10px",
@@ -138,9 +141,9 @@ const Perfil = () => {
           size={80}
           gap={4}
         >
-          {"Lucy"}
+          {profile.name}
         </Avatar>
-        <p className="principalContent"> Lucy Silva</p>
+        <p className="principalContent"> {profile.name}</p>
         <Tag
           bordered
           style={{
