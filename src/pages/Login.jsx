@@ -30,6 +30,7 @@ const Login = () => {
 
   const onSuccess = (res) => {
     setProfile(res.profileObj);
+    setIsLogged(false);
   };
 
   const onFailure = (err) => {

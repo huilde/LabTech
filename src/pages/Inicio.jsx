@@ -8,7 +8,6 @@ const Inicio = () => {
   //   return
   // };
   const [goToPerfil, setGoToPerfil] = useState(false);
-  const [goToTrilha, setGoToTrilha] = useState(false);
   return (
     <Row justify="center" align="middle">
       <Col justify="center" align="middle">
