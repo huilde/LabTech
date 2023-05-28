@@ -41,7 +41,7 @@ const Login = () => {
   return (
     <>
       {isLogged ? (
-        <>
+        <div className="" style={{ padding: "2rem" }}>
           <Person />
           <Row justify="middle" align="middle">
             <Col justify="center" align="middle">
@@ -107,7 +107,7 @@ const Login = () => {
               />
             </Col>
           </Row>
-        </>
+        </div>
       ) : (
         <Navigate to="/inicio"></Navigate>
       )}

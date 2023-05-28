@@ -14,6 +14,7 @@ const Inicio = () => {
                 style={{
                   verticalAlign: "middle",
                   marginRight: "10px",
+                  border: "2px solid #383353",
                 }}
                 size="large"
                 gap={4}

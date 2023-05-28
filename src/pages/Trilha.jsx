@@ -1,7 +1,8 @@
 import React from "react";
+import { Row, Col } from "antd";
 
 const Trilha = () => {
-  return <div className="base-font"> Pagina trilha</div>;
+  return <Col className=""> trile</Col>;
 };
 
 export default Trilha;

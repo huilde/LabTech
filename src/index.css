@@ -29,6 +29,8 @@ a:hover {
   margin: auto;
   padding: 1.2rem;
 }
+.conteudo {
+}
 .ant-input {
   display: flex;
   flex-direction: row;
@@ -76,6 +78,7 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,4 +134,7 @@ a:hover {
 }
 button {
   background-color: #f9f9f9;
+}
+.test svg {
+  margin-top: 6%;
 }
