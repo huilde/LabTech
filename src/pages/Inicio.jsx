@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Avatar, Row, Col } from "antd";
 import { Card } from "../Card";
 import { Navigate } from "react-router-dom";
+import { Context } from "../Context";
 
 const Inicio = () => {
-  // const handleClick = () => {
-  //   return
-  // };
+  const [profile] = useContext(Context);
+  console.log(profile);
   const [goToPerfil, setGoToPerfil] = useState(false);
   return (
     <Row justify="center" align="middle">
       <Col justify="center" align="middle">
-        <h1 className="base-font userNome">Olá /nome do usuário/!</h1>
+        <h1 className="base-font userNome">Olá {profile.name}!</h1>
         <Col align="start">
           <Col className="sub">
             <Avatar

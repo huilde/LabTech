@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Row, Form, Input, Button, Space, Col } from "antd";
 import { GoogleLogin } from "react-google-login";
 import { gapi } from "gapi-script";
@@ -6,15 +6,19 @@ import { gapi } from "gapi-script";
 // import { db } from "../firebase";
 import { Person } from "../Person";
 import { Navigate } from "react-router-dom";
+import { Context } from "../Context";
 
 const Login = () => {
   const [form] = Form.useForm();
   const [isLogged, setIsLogged] = useState(true);
   const nameValue = Form.useWatch("senha", form);
+  const [profile, setProfile] = useContext(Context);
   console.log(form);
-  const [profile, setProfile] = useState([]);
+  //   const [profile, setProfile] = useState([]);
   const clientId =
     "5420198135-r829nc9lp5l9mt1s3gr5da3sc8h847v4.apps.googleusercontent.com";
+
+  console.log(profile);
 
   useEffect(() => {}, []);
 

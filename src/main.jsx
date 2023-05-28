@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
 import Inicio from "../src/pages/Inicio";
@@ -10,7 +10,9 @@ import Perguntas from "./pages/Perguntas";
 import { Projeto } from "./pages/Projeto";
 import "./index.css";
 import "./App.css";
+import { Context } from "./Context";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./pages/App";
 
 const router = createBrowserRouter([
   {
@@ -42,9 +44,17 @@ const router = createBrowserRouter([
     element: <Perguntas />,
   },
 ]);
+const test = () => {
+  return (
+    <div>
+      {" "}
+      <div></div>
+    </div>
+  );
+};
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App></App>
   </React.StrictMode>
 );
