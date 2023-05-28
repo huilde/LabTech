@@ -4,9 +4,9 @@ const Content = (props) => {
   const { svg, title, description } = props;
   return (
     <Col justify="center" className="content">
-      <Col>
-        <span className="principalContent fontNormal">{title}</span>
-        <p className="description">{description}</p>
+      <Col className="tamanho">
+        <div className="principalContent contenFont fontNormal">{title}</div>
+        <div className="description">{description}</div>
       </Col>
       <Col flex="auto"></Col>
       {svg && (

@@ -30,6 +30,8 @@ a:hover {
   padding: 1.2rem;
 }
 .conteudo {
+  /* padding: 24px; */
+  width: 100% !important;
 }
 .ant-input {
   display: flex;
@@ -85,6 +87,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .base-font {
@@ -136,5 +139,5 @@ button {
   background-color: #f9f9f9;
 }
 .test svg {
-  margin-top: 6%;
+  margin-top: 12px;
 }

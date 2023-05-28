@@ -27,14 +27,13 @@ const Perfil = () => {
       <div className="profilePic"></div>
       <Row className="backgroundProfile">
         <svg
-          width="120%"
-          height="79"
-          viewBox="0 0 120% 79"
+          width="100%"
+          height="99"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <g clipPath="url(#clip0_39_61)">
-            <rect width="100%" height="79" fill="#110D24" />
+            <rect width="100%" height="99" fill="#110D24" />
             <path
               d="M97.0372 29.5801H80.3522C80.2527 29.5837 80.1534 29.5673 80.0604 29.5317C79.9674 29.4962 79.8824 29.4422 79.8107 29.3731C79.739 29.304 79.682 29.2211 79.643 29.1294C79.6041 29.0378 79.584 28.9392 79.584 28.8396C79.584 28.74 79.6041 28.6414 79.643 28.5497C79.682 28.4581 79.739 28.3752 79.8107 28.3061C79.8824 28.2369 79.9674 28.183 80.0604 28.1474C80.1534 28.1119 80.2527 28.0954 80.3522 28.0991H97.0372C97.2289 28.1061 97.4104 28.1872 97.5435 28.3253C97.6766 28.4634 97.751 28.6478 97.751 28.8396C97.751 29.0314 97.6766 29.2157 97.5435 29.3538C97.4104 29.4919 97.2289 29.573 97.0372 29.5801Z"
               fill="#302656"
@@ -122,7 +121,7 @@ const Perfil = () => {
           </g>
           <defs>
             <clipPath id="clip0_39_61">
-              <rect width="120%" height="79" fill="white" />
+              <rect width="120%" height="99" fill="white" />
             </clipPath>
           </defs>
         </svg>
@@ -140,15 +139,15 @@ const Perfil = () => {
         >
           {"Lucy"}
         </Avatar>
-        <div className="principalContent"> Lucy Silva</div>
+        <p className="principalContent"> Lucy Silva</p>
         <Tag
           bordered
           style={{
             color: " #8F8BAB",
             justifyItems: "center",
             border: "1px solid #8F8BAB",
-            borderRadius: "24px",
-            padding: "0.1rem",
+            borderRadius: "20px",
+            padding: "0.2rem 0.4rem",
           }}
         >
           INICIANTE

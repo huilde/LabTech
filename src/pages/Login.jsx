@@ -10,7 +10,8 @@ import { Navigate } from "react-router-dom";
 const Login = () => {
   const [form] = Form.useForm();
   const [isLogged, setIsLogged] = useState(true);
-  const nameValue = Form.useWatch("nome", form);
+  const nameValue = Form.useWatch("senha", form);
+  console.log(form);
   const [profile, setProfile] = useState([]);
   const clientId =
     "5420198135-r829nc9lp5l9mt1s3gr5da3sc8h847v4.apps.googleusercontent.com";
@@ -70,8 +71,8 @@ const Login = () => {
                     <Input />
                   </Form.Item>
                   <Form.Item
-                    name="Nome"
-                    label="Nome"
+                    name="Senha"
+                    label="Senha"
                     rules={[
                       {
                         required: true,
@@ -103,7 +104,7 @@ const Login = () => {
                 onSuccess={onSuccess}
                 onFailure={onFailure}
                 cookiePolicy={"single_host_origin"}
-                isSignedIn={true}
+                isSignedIn={false}
               />
             </Col>
           </Row>
