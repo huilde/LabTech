@@ -5,8 +5,13 @@ const Content = (props) => {
   return (
     <Col justify="center" className="content">
       <Col className="tamanho">
-        <div className="principalContent contenFont fontNormal">{title}</div>
-        <div className="description">{description}</div>
+        <div
+          className="principalContent contenFont fontNormal"
+          style={{ marginBottom: "12px" }}
+        >
+          {title}
+        </div>
+        <div className="type">{description}</div>
       </Col>
       <Col flex="auto"></Col>
       {svg && (

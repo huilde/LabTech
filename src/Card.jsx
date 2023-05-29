@@ -9,9 +9,9 @@ const Card = () => {
     <div onClick={() => setGoToTrilha(true)} className="card">
       <h2 className="subtitle"> Logica de programação</h2>
 
-      <h2 className="time"> 10 horas</h2>
+      <h2 className="time"> 10 HORAS</h2>
       <Persons />
-      <p className="description">
+      <p className="descriptions">
         Aprenda o básico e comece a estudar programação.
       </p>
       <Progress percent={40} showInfo={false} strokeColor="#27C36F" />
